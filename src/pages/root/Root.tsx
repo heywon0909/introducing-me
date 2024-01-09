@@ -1,9 +1,10 @@
 import { Outlet } from "react-router";
+import * as S from './styled'
 
 export default function Root() {
   return (
-    <div>
+    <S.Container>
       <Outlet />
-    </div>
+    </S.Container>
   );
 }
