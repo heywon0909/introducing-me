@@ -1,16 +1,18 @@
-import { RouteObject } from 'react-router-dom';
+import { RouteObject } from "react-router-dom";
+import Root from "../pages/Root";
+import Home from "../pages/Home";
 
 const paths: RouteObject[] = [
   {
-    path: '/',
-    element: <div>hi</div>,
+    path: "/",
+    element: <Root />,
     children: [
       {
-        path: '/',
-        element: <div>sdf</div>,
+        path: "/",
+        element: <Home />,
       },
     ],
-  }
-]
+  },
+];
 
-    export default paths;
+export default paths;
