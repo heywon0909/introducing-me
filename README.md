@@ -6,3 +6,4 @@
 
 많은 관심 부탁드립니다. 감사합니다. 🤲
 
+<img src="https://github.com/heywon0909/introducing-me/assets/50330312/e72b3316-4a3a-45e5-b9bf-3bb7d48760d9" width="200" height="220" />
