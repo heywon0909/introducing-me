@@ -21,6 +21,7 @@ export const Img = styled.div<{ url: string }>`
 
 export const TitleWrap = styled.div`
   width: 400px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,6 +31,8 @@ export const TitleWrap = styled.div`
 export const Title = styled.h2`
   color: #fff;
   font-size: 60px;
+  font-family: "Noto Sans KR";
+  font-weight: 800;
 `;
 
 export const TitleDesc = styled.h2`
