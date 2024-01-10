@@ -8,6 +8,10 @@ export const Container = styled.div`
   align-items: center;
   color: white;
   gap: 10px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const Img = styled.div<{ url: string }>`
@@ -20,12 +24,12 @@ export const Img = styled.div<{ url: string }>`
 `;
 
 export const TitleWrap = styled.div`
-  width: 400px;
-  height: 400px;
+  width: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
 `;
 
 export const Title = styled.h2`
@@ -35,9 +39,10 @@ export const Title = styled.h2`
   font-weight: 800;
 `;
 
-export const TitleDesc = styled.h2`
+export const TitleDesc = styled.div`
   color: #fff;
-  font-size: 50px;
+  line-height: 20px;
+  font-size: 30px;
 `;
 
 export const ProfileImg = styled.img`
@@ -46,4 +51,22 @@ export const ProfileImg = styled.img`
   position: absolute;
   top: 14%;
   left: 24%;
+`;
+
+export const ProfileDesc = styled.div`
+  color: #fff;
+  font-size: 30px;
+  font-family: "Noto Sans KR";
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+`;
+
+export const JobTitle = styled.div`
+  color: #a675ff;
+  font-size: 50px;
+  font-family: "Noto Sans KR";
+  font-weight: 600;
 `;
