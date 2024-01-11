@@ -1,28 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useEffect, useRef } from 'react';
+import router from './router'
 import './App.css';
+import { RouterProvider } from 'react-router';
+import * as S from 'pages/main/styled'
 
 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <RouterProvider router={router} />
+    )
 }
 
 export default App;

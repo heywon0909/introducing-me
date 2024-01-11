@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap");
 body {
   margin: 0;
   font-family: "Noto Sans KR", sans-serif;
@@ -10,4 +9,29 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+@font-face {
+  font-family: "NotoSansKR-Bold";
+  src: url("../public/assets/fonts/NotoSansKR-Bold.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansKR-Light";
+  src: url("../public/assets/fonts/NotoSansKR-Light.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansKR-Medium";
+  src: url("../public/assets/fonts/NotoSansKR-Medium.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansKR-Regular";
+  src: url("../public/assets/fonts/NotoSansKR-Regular.ttf");
+}
+
+@font-face {
+  font-family: "NotoSansKR-SemiBold";
+  src: url("../public/assets/fonts/NotoSansKR-SemiBold.ttf");
 }
