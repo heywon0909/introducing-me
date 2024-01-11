@@ -35,7 +35,7 @@ export const TitleWrap = styled.div`
 `;
 
 export const Title = styled.span`
-  color: #fff;
+  color: rgb(255, 252, 225);
   font-size: 6rem;
   font-family: NotoSansKR-Bold;
   font-weight: 800;

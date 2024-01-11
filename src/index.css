@@ -35,3 +35,8 @@ code {
   font-family: "NotoSansKR-SemiBold";
   src: url("../public/assets/fonts/NotoSansKR-SemiBold.ttf");
 }
+
+@font-face {
+  font-family: "NotoSansKR-ExtraBold";
+  src: url("../public/assets/fonts/NotoSansKR-ExtraBold.ttf");
+}
