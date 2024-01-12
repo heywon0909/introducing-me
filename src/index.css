@@ -40,3 +40,8 @@ code {
   font-family: "NotoSansKR-ExtraBold";
   src: url("../public/assets/fonts/NotoSansKR-ExtraBold.ttf");
 }
+
+@font-face {
+  font-family: "Lemon";
+  src: url("../public/assets/fonts/Lemon-Regular.ttf");
+}
