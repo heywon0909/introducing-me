@@ -46,7 +46,7 @@ export default function Home() {
         <S.TitleDesc>박혜원입니다.</S.TitleDesc>
       </S.ProfileDesc> */}
     </S.TitleWrap>
-    <S.TitleWrap ref={job}>
+      <S.TitleWrap ref={job}>
       <S.JobTitle>F</S.JobTitle>
       <S.JobTitle>R</S.JobTitle>
       <S.JobTitle>O</S.JobTitle>

@@ -2,10 +2,11 @@ import styled from "@emotion/styled";
 
 export const Container = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   color: white;
-  gap: 10px;
-  width: 800px;
+  width: 100%;
+  padding: 5px 5px;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -36,7 +37,7 @@ export const TitleWrap = styled.div`
 
 export const Title = styled.span`
   color: rgb(255, 252, 225);
-  font-size: 6rem;
+  font-size: 4rem;
   font-family: NotoSansKR-Bold;
   font-weight: 800;
   @media (max-width: 768px) {
@@ -74,7 +75,7 @@ export const ProfileDesc = styled.div`
 
 export const JobTitle = styled.div`
   color: #a675ff;
-  font-size: 5rem;
-  font-family: "Noto Sans KR";
-  font-weight: 600;
+  font-size: 3rem;
+  font-family: NotoSansKR-Bold;
+  font-weight: 300;
 `;
