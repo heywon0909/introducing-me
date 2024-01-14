@@ -121,3 +121,63 @@ export const FrameContainer = styled.div<{ url: string }>`
     height: 80%;
   }
 `;
+
+export const FloatNav = styled.div<{ left?: boolean; right?: boolean }>`
+  width: 60px;
+  height: 230px;
+  aspect-ratio: 1 / 1;
+  position: absolute;
+  border-radius: 10px;
+  display: flex;
+  background: rgb(39 39 39);
+  ${(props) =>
+    props.left &&
+    `
+    left:0;
+  `};
+  ${(props) =>
+    props.right &&
+    `
+    right:0;
+  `};
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+  transition: all 0.5s ease-out;
+  &:hover {
+    width: 100px;
+  }
+`;
+
+export const Nav = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  inset: 3px;
+  border-radius: 10px;
+  background: #000000;
+  z-index: 1;
+`;
+
+export const NavText = styled.span`
+  color: rgb(255, 252, 225);
+  font-family: NotoSansKR-Light;
+  font-weight: 100;
+  display: none;
+`;
+
+export const NavWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 2px;
+`;
+
+export const NavImg = styled.img`
+  width: 20px;
+  height: 20px;
+`;

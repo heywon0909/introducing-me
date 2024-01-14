@@ -36,31 +36,24 @@ export default function Home() {
       <S.Title>E</S.Title>
       <S.Title>L</S.Title>
       <S.Title>L</S.Title>
-      <S.Title>O</S.Title>
+      <S.Title>O　</S.Title>
       <S.Title ref={hiFive}>
-        <FaHandsClapping id='hand' size={100} color='#0080FF'/>
+        <FaHandsClapping id='hand' size={50} color='rgb(67 92 221)'/>
       </S.Title>
-
-      {/* <S.ProfileDesc ref={greeting}>
-      <S.JobTitle>Front-end</S.JobTitle>
-        <S.TitleDesc>박혜원입니다.</S.TitleDesc>
-      </S.ProfileDesc> */}
     </S.TitleWrap>
       <S.TitleWrap ref={job}>
-      <S.JobTitle>F</S.JobTitle>
-      <S.JobTitle>R</S.JobTitle>
+      <S.JobTitle>I</S.JobTitle>
+      <S.JobTitle>'M　</S.JobTitle>
+      <S.JobTitle>H</S.JobTitle>
+      <S.JobTitle>E</S.JobTitle>
+      <S.JobTitle>Y</S.JobTitle>
+      <S.JobTitle>W</S.JobTitle>
       <S.JobTitle>O</S.JobTitle>
       <S.JobTitle>N</S.JobTitle>
-      <S.JobTitle>T</S.JobTitle>
-      <S.JobTitle>-</S.JobTitle>
-      <S.JobTitle>E</S.JobTitle>
-      <S.JobTitle>N</S.JobTitle>
-      <S.JobTitle>D</S.JobTitle>
-      {/* <S.ProfileDesc ref={greeting}>
-      <S.JobTitle>Front-end</S.JobTitle>
-        <S.TitleDesc>박혜원입니다.</S.TitleDesc>
-      </S.ProfileDesc> */}
     </S.TitleWrap>
+     <S.TitleWrap ref={job}>
+        <S.JobDesc>Frontend Developer</S.JobDesc>
+      </S.TitleWrap>
     </S.ContentWrapper>
     <S.Img url={process.env.PUBLIC_URL + '/assets/image/photo.jpg'} >
       <S.ProfileImg src={process.env.PUBLIC_URL + '/assets/image/hyewon.jpg'} />

@@ -16,11 +16,30 @@ export default function Root() {
           <S.LogoImgWrapper>
             <S.LogoImg src={process.env.PUBLIC_URL + '/assets/image/hyewonLogo.png'} alt='logo' />
           </S.LogoImgWrapper>
-
         </S.LogoWrapper>
 
       </S.Header>
       <S.ContainerWrapper>
+        <S.FloatNav left={true}>
+          <S.Nav>
+            <S.NavWrapper>
+              <S.NavImg src={process.env.PUBLIC_URL + '/assets/image/woman.png'} alt='info' />
+              <S.NavText>Info</S.NavText>
+            </S.NavWrapper>
+            <S.NavWrapper>
+              <S.NavImg src={process.env.PUBLIC_URL + '/assets/image/pencil.png'} alt='skills' />
+              <S.NavText>Skills</S.NavText>
+            </S.NavWrapper>
+            <S.NavWrapper>
+              <S.NavImg src={process.env.PUBLIC_URL + '/assets/image/resume.png'} alt='info' />
+              <S.NavText>Resume</S.NavText>
+            </S.NavWrapper>
+            <S.NavWrapper>
+              <S.NavImg src={process.env.PUBLIC_URL + '/assets/image/idea.png'} alt='info' />
+              <S.NavText>Project</S.NavText>
+            </S.NavWrapper>      
+          </S.Nav>
+        </S.FloatNav>
         <S.Frame left={3}>
           <S.FrameText>D</S.FrameText>
           <S.FrameText>E</S.FrameText>

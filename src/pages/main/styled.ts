@@ -30,16 +30,16 @@ export const ContentWrapper = styled.div`
 
 export const TitleWrap = styled.div`
   display: flex;
-  width: 400px;
-  justify-content: center;
+  width: 300px;
+  justify-content: flex-start;
   align-items: center;
 `;
 
 export const Title = styled.span`
   color: rgb(255, 252, 225);
-  font-size: 4rem;
+  font-size: 2rem;
   font-family: NotoSansKR-Bold;
-  font-weight: 800;
+  font-weight: 400;
   @media (max-width: 768px) {
     font-size: 4rem;
   }
@@ -74,8 +74,15 @@ export const ProfileDesc = styled.div`
 `;
 
 export const JobTitle = styled.div`
-  color: #a675ff;
-  font-size: 3rem;
+  color: #000;
+  font-size: 2rem;
   font-family: NotoSansKR-Bold;
-  font-weight: 300;
+  font-weight: 100;
+`;
+
+export const JobDesc = styled.div`
+  color: #673ab7;
+  font-size: 1.4rem;
+  font-family: NotoSansKR-Bold;
+  font-weight: 100;
 `;
