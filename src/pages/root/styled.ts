@@ -25,6 +25,29 @@ export const Header = styled.header`
   border-bottom: 1px solid #515151;
 `;
 
+export const HeaderMenu = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2px;
+  width: 30%;
+`;
+
+export const MenuLinkWrapper = styled.div`
+  display: flex;
+`;
+
+export const MenuLink = styled.a`
+  width: 100%;
+  color: rgb(201 194 229);
+  font-family: Lemon;
+  font-size: 16px;
+  cursor: pointer;
+  &:hover {
+    color: #fff;
+  }
+`;
+
 export const LogoImg = styled.img`
   width: 40px;
   height: 40px;
@@ -127,9 +150,9 @@ export const FloatNav = styled.div<{ left?: boolean; right?: boolean }>`
   height: 230px;
   aspect-ratio: 1 / 1;
   position: absolute;
-  border-radius: 10px;
+  border-radius: 5px;
   display: flex;
-  background: rgb(39 39 39);
+  background: #7e5bbf;
   ${(props) =>
     props.left &&
     `
@@ -157,27 +180,39 @@ export const Nav = styled.div`
   align-items: center;
   position: absolute;
   inset: 3px;
-  border-radius: 10px;
-  background: #000000;
   z-index: 1;
+  padding: 2px 8px;
 `;
 
 export const NavText = styled.span`
-  color: rgb(255, 252, 225);
-  font-family: NotoSansKR-Light;
-  font-weight: 100;
-  display: none;
+  color: #fff;
+  font-family: NotoSansKR-Medium;
+  font-weight: 400;
+  padding-left: 3px;
 `;
 
-export const NavWrapper = styled.div`
+export const NavWrapper = styled.div<{ dir?: "column" | "row" }>`
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding: 5px 2px;
+  ${(props) =>
+    props.dir &&
+    `
+    flex-direction:${props.dir};
+  `};
 `;
 
 export const NavImg = styled.img`
   width: 20px;
   height: 20px;
+`;
+
+export const NavTitle = styled.div`
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-family: NotoSansKR-Medium;
+  font-weight: 400;
 `;

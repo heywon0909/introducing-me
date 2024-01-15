@@ -1,7 +1,10 @@
 import { Outlet } from "react-router";
 import * as S from './styled'
+import { useState } from 'react';
 
 export default function Root() {
+  const [hover, setHover] = useState(false);
+  const handleHover = (flg:boolean) => setHover(flg);
   return (
     <S.Container>
       <S.Header>
@@ -17,27 +20,48 @@ export default function Root() {
             <S.LogoImg src={process.env.PUBLIC_URL + '/assets/image/hyewonLogo.png'} alt='logo' />
           </S.LogoImgWrapper>
         </S.LogoWrapper>
-
+        <S.HeaderMenu>
+          <S.MenuLinkWrapper>
+            <S.MenuLink>Info</S.MenuLink>
+          </S.MenuLinkWrapper>
+          <S.MenuLinkWrapper>
+            <S.MenuLink>Skills</S.MenuLink>
+          </S.MenuLinkWrapper>
+          <S.MenuLinkWrapper>
+            <S.MenuLink>Resume</S.MenuLink>
+          </S.MenuLinkWrapper>
+          <S.MenuLinkWrapper>
+            <S.MenuLink>Project</S.MenuLink>
+          </S.MenuLinkWrapper>  
+        </S.HeaderMenu>
       </S.Header>
       <S.ContainerWrapper>
-        <S.FloatNav left={true}>
+        <S.FloatNav left={true} onMouseOver={()=>handleHover(true)} onMouseLeave={()=>handleHover(false)}>
           <S.Nav>
-            <S.NavWrapper>
+            {hover &&  (<><S.NavWrapper>
               <S.NavImg src={process.env.PUBLIC_URL + '/assets/image/woman.png'} alt='info' />
               <S.NavText>Info</S.NavText>
-            </S.NavWrapper>
-            <S.NavWrapper>
-              <S.NavImg src={process.env.PUBLIC_URL + '/assets/image/pencil.png'} alt='skills' />
-              <S.NavText>Skills</S.NavText>
-            </S.NavWrapper>
-            <S.NavWrapper>
-              <S.NavImg src={process.env.PUBLIC_URL + '/assets/image/resume.png'} alt='info' />
-              <S.NavText>Resume</S.NavText>
-            </S.NavWrapper>
-            <S.NavWrapper>
-              <S.NavImg src={process.env.PUBLIC_URL + '/assets/image/idea.png'} alt='info' />
-              <S.NavText>Project</S.NavText>
-            </S.NavWrapper>      
+            </S.NavWrapper><S.NavWrapper>
+                <S.NavImg src={process.env.PUBLIC_URL + '/assets/image/pencil.png'} alt='skills' />
+                <S.NavText>Skills</S.NavText>
+              </S.NavWrapper><S.NavWrapper>
+                <S.NavImg src={process.env.PUBLIC_URL + '/assets/image/resume.png'} alt='info' />
+                <S.NavText>Resume</S.NavText>
+              </S.NavWrapper><S.NavWrapper>
+                <S.NavImg src={process.env.PUBLIC_URL + '/assets/image/idea.png'} alt='info' />
+                <S.NavText>Project</S.NavText>
+              </S.NavWrapper></>)}
+            {!hover && (<S.NavWrapper dir='column'>
+                <S.NavTitle>S</S.NavTitle>
+                <S.NavTitle>H</S.NavTitle>
+                <S.NavTitle>O</S.NavTitle>
+                <S.NavTitle>W</S.NavTitle>
+                <S.NavTitle>　</S.NavTitle>
+                <S.NavTitle>M</S.NavTitle>
+                <S.NavTitle>O</S.NavTitle>
+                <S.NavTitle>R</S.NavTitle>
+                <S.NavTitle>E</S.NavTitle>
+            </S.NavWrapper>)}
           </S.Nav>
         </S.FloatNav>
         <S.Frame left={3}>
