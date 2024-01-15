@@ -39,8 +39,8 @@ export const MenuLinkWrapper = styled.div`
 
 export const MenuLink = styled.a`
   width: 100%;
-  color: rgb(201 194 229);
-  font-family: Lemon;
+  color: rgb(123 123 123);
+  font-family: NotoSansKR-Medium;
   font-size: 16px;
   cursor: pointer;
   &:hover {
