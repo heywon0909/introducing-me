@@ -1,44 +1,21 @@
 import { Outlet } from "react-router";
 import * as S from './styled'
 import { useState } from 'react';
+import Header from 'components/header/Header';
+
+
 
 export default function Root() {
   const [hover, setHover] = useState(false);
   const handleHover = (flg:boolean) => setHover(flg);
   return (
     <S.Container>
-      <S.Header>
-        <S.LogoWrapper>
-          <S.Logo>h</S.Logo>
-          <S.Logo>e</S.Logo>
-          <S.Logo>y</S.Logo>
-          <S.Logo>w</S.Logo>
-          <S.Logo>o</S.Logo>
-          <S.Logo>n</S.Logo>
-          <S.Logo>0909</S.Logo>
-          <S.LogoImgWrapper>
-            <S.LogoImg src={process.env.PUBLIC_URL + '/assets/image/hyewonLogo.png'} alt='logo' />
-          </S.LogoImgWrapper>
-        </S.LogoWrapper>
-        <S.HeaderMenu>
-          <S.MenuLinkWrapper>
-            <S.MenuLink>Info</S.MenuLink>
-          </S.MenuLinkWrapper>
-          <S.MenuLinkWrapper>
-            <S.MenuLink>Skills</S.MenuLink>
-          </S.MenuLinkWrapper>
-          <S.MenuLinkWrapper>
-            <S.MenuLink>Resume</S.MenuLink>
-          </S.MenuLinkWrapper>
-          <S.MenuLinkWrapper>
-            <S.MenuLink>Project</S.MenuLink>
-          </S.MenuLinkWrapper>  
-        </S.HeaderMenu>
-      </S.Header>
+      <Header/>
       <S.ContainerWrapper>
         <S.FloatNav left={true} onMouseOver={()=>handleHover(true)} onMouseLeave={()=>handleHover(false)}>
           <S.Nav>
-            {hover &&  (<><S.NavWrapper>
+            {hover && (<>
+              <S.NavWrapper>
               <S.NavImg src={process.env.PUBLIC_URL + '/assets/image/woman.png'} alt='info' />
               <S.NavText>Info</S.NavText>
             </S.NavWrapper><S.NavWrapper>
@@ -50,7 +27,8 @@ export default function Root() {
               </S.NavWrapper><S.NavWrapper>
                 <S.NavImg src={process.env.PUBLIC_URL + '/assets/image/idea.png'} alt='info' />
                 <S.NavText>Project</S.NavText>
-              </S.NavWrapper></>)}
+              </S.NavWrapper>
+            </>)}
             {!hover && (<S.NavWrapper dir='column'>
                 <S.NavTitle>S</S.NavTitle>
                 <S.NavTitle>H</S.NavTitle>
