@@ -2,6 +2,7 @@ import { Outlet } from "react-router";
 import * as S from './styled'
 import { useState } from 'react';
 import Header from 'components/header/Header';
+import Nav from 'components/nav/Nav';
 
 
 
@@ -12,36 +13,7 @@ export default function Root() {
     <S.Container>
       <Header/>
       <S.ContainerWrapper>
-        <S.FloatNav left={true} onMouseOver={()=>handleHover(true)} onMouseLeave={()=>handleHover(false)}>
-          <S.Nav>
-            {hover && (<>
-              <S.NavWrapper>
-              <S.NavImg src={process.env.PUBLIC_URL + '/assets/image/woman.png'} alt='info' />
-              <S.NavText>Info</S.NavText>
-            </S.NavWrapper><S.NavWrapper>
-                <S.NavImg src={process.env.PUBLIC_URL + '/assets/image/pencil.png'} alt='skills' />
-                <S.NavText>Skills</S.NavText>
-              </S.NavWrapper><S.NavWrapper>
-                <S.NavImg src={process.env.PUBLIC_URL + '/assets/image/resume.png'} alt='info' />
-                <S.NavText>Resume</S.NavText>
-              </S.NavWrapper><S.NavWrapper>
-                <S.NavImg src={process.env.PUBLIC_URL + '/assets/image/idea.png'} alt='info' />
-                <S.NavText>Project</S.NavText>
-              </S.NavWrapper>
-            </>)}
-            {!hover && (<S.NavWrapper dir='column'>
-                <S.NavTitle>S</S.NavTitle>
-                <S.NavTitle>H</S.NavTitle>
-                <S.NavTitle>O</S.NavTitle>
-                <S.NavTitle>W</S.NavTitle>
-                <S.NavTitle>　</S.NavTitle>
-                <S.NavTitle>M</S.NavTitle>
-                <S.NavTitle>O</S.NavTitle>
-                <S.NavTitle>R</S.NavTitle>
-                <S.NavTitle>E</S.NavTitle>
-            </S.NavWrapper>)}
-          </S.Nav>
-        </S.FloatNav>
+        <Nav hover={hover} handleHover={handleHover} />
         <S.Frame left={3}>
           <S.FrameText>D</S.FrameText>
           <S.FrameText>E</S.FrameText>
