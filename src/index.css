@@ -45,3 +45,13 @@ code {
   font-family: "Lemon";
   src: url("../public/assets/fonts/Lemon-Regular.ttf");
 }
+
+@font-face {
+  font-family: "Poppins-semibold";
+  src: url("../public/assets/fonts/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-black";
+  src: url("../public/assets/fonts/Poppins-Black.ttf");
+}

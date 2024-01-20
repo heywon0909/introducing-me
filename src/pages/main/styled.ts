@@ -30,21 +30,31 @@ export const ContentWrapper = styled.div`
 
 export const TitleWrap = styled.div`
   display: flex;
-  width: 300px;
+  width: 330px;
   justify-content: flex-start;
   align-items: center;
 `;
 
 export const Title = styled.span`
-  color: rgb(255, 252, 225);
-  font-size: 2rem;
-  font-family: NotoSansKR-Bold;
-  font-weight: 400;
-  @media (max-width: 768px) {
-    font-size: 4rem;
-  }
-  @media (max-width: 768px) {
-    font-size: 3rem;
+  font-size: 3vw;
+  letter-spacing: -0.01em;
+  line-height: 100%;
+  margin: 0;
+  font-family: Poppins-black;
+  width: 100%;
+  color: rgb(182, 182, 182, 0.2);
+  background: linear-gradient(to right, #fdbbbb, #001c95) no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 0%;
+  transition: background-size cubic-bezier(0.1, 0.5, 0.5, 1) 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  @media (max-width: 600px) {
+    font-size: 10vw;
   }
 `;
 
@@ -74,15 +84,16 @@ export const ProfileDesc = styled.div`
 `;
 
 export const JobTitle = styled.div`
-  color: #000;
-  font-size: 2rem;
-  font-family: NotoSansKR-Bold;
+  color: rgb(255, 252, 225);
+  width: 280px;
+  font-size: 1.8rem;
+  font-family: Poppins-black;
   font-weight: 100;
 `;
 
 export const JobDesc = styled.div`
   color: #673ab7;
-  font-size: 1.4rem;
-  font-family: NotoSansKR-Bold;
+  font-size: 1.5rem;
+  font-family: Poppins-black;
   font-weight: 100;
 `;

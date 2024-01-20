@@ -7,6 +7,7 @@ export default function Home() {
   const greeting = useRef<HTMLHeadingElement>(null);
   const job = useRef<HTMLDivElement>(null);
   const hiFive = useRef<HTMLDivElement>(null);
+
   
 
   useEffect(() => {
@@ -18,7 +19,11 @@ export default function Home() {
       yPercent: 0,
       opacity: 1,
       duration: 1,
-    }).to(hiFive.current, { duration: 1, rotation: 360 })
+    })
+    .fromTo(hiFive.current, {
+        opacity:0.3
+    },{ duration: 1, yPercent: 0, rotateY: 30, rotateZ: 30,opacity:1 })  
+    
     .fromTo(job.current, {
       opacity: 0
     }, {
@@ -29,34 +34,38 @@ export default function Home() {
   
   }, []);
 
+
+  useEffect(() => {
+   const textElements:Array<HTMLElement> = gsap.utils.toArray(document.querySelectorAll('#text'));
+
+    textElements.forEach(text => {
+      gsap.to(text, {
+        backgroundSize: '100%',
+        ease: 'none',
+        
+      });
+  });
+  
+  }, []);
+
+
   return (<S.Container>
     <S.ContentWrapper>
     <S.TitleWrap  ref={greeting}>
-      <S.Title>H</S.Title>
-      <S.Title>E</S.Title>
-      <S.Title>L</S.Title>
-      <S.Title>L</S.Title>
-      <S.Title>O　</S.Title>
+      <S.Title id="text">HELLO </S.Title>
       <S.Title ref={hiFive}>
-        <FaHandsClapping id='hand' size={50} color='rgb(67 92 221)'/>
+        <FaHandsClapping id='hand' size={60} color='rgb(67 92 221)'/>
       </S.Title>
     </S.TitleWrap>
       <S.TitleWrap ref={job}>
-      <S.JobTitle>I</S.JobTitle>
-      <S.JobTitle>'M　</S.JobTitle>
-      <S.JobTitle>H</S.JobTitle>
-      <S.JobTitle>E</S.JobTitle>
-      <S.JobTitle>Y</S.JobTitle>
-      <S.JobTitle>W</S.JobTitle>
-      <S.JobTitle>O</S.JobTitle>
-      <S.JobTitle>N</S.JobTitle>
+      <S.Title id="text">I'm Heywon</S.Title>
     </S.TitleWrap>
      <S.TitleWrap ref={job}>
         <S.JobDesc>Frontend Developer</S.JobDesc>
       </S.TitleWrap>
     </S.ContentWrapper>
     <S.Img url={process.env.PUBLIC_URL + '/assets/image/photo.jpg'} >
-      <S.ProfileImg src={process.env.PUBLIC_URL + '/assets/image/hyewon.jpg'} />
+      <S.ProfileImg src={process.env.PUBLIC_URL + '/assets/image/me.jpg'} />
     </S.Img>
   </S.Container>);
 }
