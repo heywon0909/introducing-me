@@ -49,23 +49,49 @@ export default function Home() {
   }, []);
 
 
-  return (<S.Container>
-    <S.ContentWrapper>
-    <S.TitleWrap  ref={greeting}>
-      <S.Title id="text">HELLO </S.Title>
-      <S.Title ref={hiFive}>
-        <FaHandsClapping id='hand' size={60} color='rgb(67 92 221)'/>
-      </S.Title>
-    </S.TitleWrap>
-      <S.TitleWrap ref={job}>
-      <S.Title id="text">I'm Heywon</S.Title>
-    </S.TitleWrap>
-     <S.TitleWrap ref={job}>
-        <S.JobDesc>Frontend Developer</S.JobDesc>
-      </S.TitleWrap>
-    </S.ContentWrapper>
-    <S.Img url={process.env.PUBLIC_URL + '/assets/image/photo.jpg'} >
-      <S.ProfileImg src={process.env.PUBLIC_URL + '/assets/image/me.jpg'} />
-    </S.Img>
-  </S.Container>);
+
+
+  return (
+    <><S.Frame left={3}>
+      <S.FrameText>D</S.FrameText>
+      <S.FrameText>E</S.FrameText>
+      <S.FrameText>V</S.FrameText>
+      <S.FrameText>E</S.FrameText>
+      <S.FrameText>L</S.FrameText>
+      <S.FrameText>O</S.FrameText>
+      <S.FrameText>P</S.FrameText>
+      <S.FrameText>E</S.FrameText>
+      <S.FrameText>R</S.FrameText>
+    </S.Frame><S.Frame right={3}>
+        <S.FrameText>F</S.FrameText>
+        <S.FrameText>R</S.FrameText>
+        <S.FrameText>O</S.FrameText>
+        <S.FrameText>N</S.FrameText>
+        <S.FrameText>T</S.FrameText>
+        <S.FrameText>-</S.FrameText>
+        <S.FrameText>E</S.FrameText>
+        <S.FrameText>N</S.FrameText>
+        <S.FrameText>D</S.FrameText>
+      </S.Frame><S.FrameContainer url={process.env.PUBLIC_URL + '/assets/image/image.png'}>
+        <S.Container>
+          <S.ContentWrapper>
+            <S.TitleWrap ref={greeting}>
+              <S.Title id="text">HELLO </S.Title>
+              <S.Title ref={hiFive}>
+                <FaHandsClapping id='hand' size={60} color='rgb(67 92 221)' />
+              </S.Title>
+            </S.TitleWrap>
+            <S.TitleWrap ref={job}>
+              <S.Title id="text">I'm Heywon</S.Title>
+            </S.TitleWrap>
+            <S.TitleWrap ref={job}>
+              <S.JobDesc>Frontend Developer</S.JobDesc>
+            </S.TitleWrap>
+          </S.ContentWrapper>
+          <S.Img url={process.env.PUBLIC_URL + '/assets/image/photo.jpg'}>
+            <S.ProfileImg src={process.env.PUBLIC_URL + '/assets/image/heyIcon.png'} />
+          </S.Img>
+        </S.Container>
+      </S.FrameContainer></>
+    );
 }
