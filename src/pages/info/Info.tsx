@@ -1,12 +1,13 @@
 import * as S from './styled'
 export default function Info() {
     return (
+        <S.ContainerWrapper>
         <S.InfoWrapper>
             <S.Mybanner>
-                <S.Title>꾸준히 LEVELUP 하는 프론트엔드 박혜원입니다 🌳 </S.Title>
+                <S.Title>ABOUT</S.Title>
             </S.Mybanner>
             <S.Userbanner>
-                <S.TitleText>ABOUT</S.TitleText>
+                <S.TitleText>꾸준히 LEVELUP 하는 프론트엔드 박혜원입니다 🌳</S.TitleText>
                 <S.UserWrapper>
                     <S.UserImg>SDF</S.UserImg>
                     <S.UserInfoWrapper>
@@ -194,7 +195,8 @@ export default function Info() {
                 </S.SkillsWrapper>
                 
             </S.Userbanner>
-        </S.InfoWrapper>
+            </S.InfoWrapper>
+        </S.ContainerWrapper>    
     );
 }
 

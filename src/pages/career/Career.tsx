@@ -1,6 +1,7 @@
 import * as S from "./styled";
 export default function Resume() {
   return (
+    <S.ContainerWrapper>
     <S.CareerWrapper>
       <S.Title>Career</S.Title>
       <S.ContentWrapper>
@@ -88,6 +89,7 @@ export default function Resume() {
           </S.CompanyCareer>
         </S.CompanyWrapper>
       </S.ContentWrapper>
-    </S.CareerWrapper>
+      </S.CareerWrapper>
+      </S.ContainerWrapper>
   );
 }

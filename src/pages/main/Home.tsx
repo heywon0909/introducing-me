@@ -56,7 +56,7 @@ export default function Home() {
   }, []);
 
   return (
-    <>
+    <S.ContainerWrapper>
       <S.Frame left={3}>
         <S.FrameText>D</S.FrameText>
         <S.FrameText>E</S.FrameText>
@@ -99,11 +99,11 @@ export default function Home() {
           </S.ContentWrapper>
           <S.Img url={process.env.PUBLIC_URL + "/assets/image/photo.jpg"}>
             <S.ProfileImg
-              src={process.env.PUBLIC_URL + "/assets/image/me.jpg"}
+              src={process.env.PUBLIC_URL + "/assets/image/heyIcon.png"}
             />
           </S.Img>
         </S.Container>
       </S.FrameContainer>
-    </>
+    </S.ContainerWrapper>
   );
 }

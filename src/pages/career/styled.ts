@@ -1,9 +1,19 @@
 import styled from "@emotion/styled";
 
+export const ContainerWrapper = styled.div`
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(14, 16, 15);
+`;
+
 export const Title = styled.div`
   font-family: Poppins-black;
   color: rgb(182 182 182);
-  font-size: 2rem;
+  font-size: 3rem;
 `;
 
 export const CareerWrapper = styled.div`

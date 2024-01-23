@@ -11,10 +11,8 @@ export default function Root() {
   return (
     <S.Container>
       <Header />
-      <S.ContainerWrapper>
         <Nav hover={hover} handleHover={handleHover} />
         <Outlet />
-      </S.ContainerWrapper>
     </S.Container>
   );
 }

@@ -130,10 +130,6 @@ export const FrameText = styled.span`
   font-family: NotoSansKR-Bold;
   font-weight: 800;
 `;
-<<<<<<< HEAD
-
-=======
->>>>>>> 46b7105f73f7b789876fe2083224d41a4c68eb15
 export const FrameContainer = styled.div<{ url: string }>`
   display: flex;
   justify-content: space-between;
@@ -151,4 +147,14 @@ export const FrameContainer = styled.div<{ url: string }>`
     width: 70%;
     height: 80%;
   }
+`;
+
+export const ContainerWrapper = styled.div`
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(14, 16, 15);
 `;

@@ -1,11 +1,26 @@
 import styled from "@emotion/styled";
 
-export const InfoWrapper = styled.div`
+export const ContainerWrapper = styled.div`
   width: 100%;
+  height: 100vh;
   display: flex;
-  gap: 10px;
+  position: relative;
   justify-content: center;
   align-items: center;
+  background-color: rgb(14, 16, 15);
+`;
+
+export const Title = styled.div`
+  font-family: Poppins-black;
+  color: rgb(182 182 182);
+  font-size: 3rem;
+`;
+
+export const InfoWrapper = styled.div`
+  width: 70%;
+  height: 100%;
+  display: flex;
+  gap: 10px;
   flex-direction: column;
 `;
 
@@ -13,23 +28,7 @@ export const Mybanner = styled.div`
   width: auto;
 `;
 
-export const Title = styled.span`
-  font-size: 2vw;
-  letter-spacing: -0.01em;
-  line-height: 100%;
-  margin: 0;
-  font-family: Poppins-black;
-  width: 100%;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  position: relative;
-`;
-
 export const Userbanner = styled.div`
-  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

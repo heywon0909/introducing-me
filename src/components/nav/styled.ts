@@ -153,6 +153,8 @@ export const FloatNav = styled.div<{ left?: boolean; right?: boolean }>`
   border-radius: 5px;
   display: flex;
   background: #7e5bbf;
+  top: 40%;
+  z-index: 1;
   ${(props) =>
     props.left &&
     `
