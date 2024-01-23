@@ -130,7 +130,10 @@ export const FrameText = styled.span`
   font-family: NotoSansKR-Bold;
   font-weight: 800;
 `;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 46b7105f73f7b789876fe2083224d41a4c68eb15
 export const FrameContainer = styled.div<{ url: string }>`
   display: flex;
   justify-content: space-between;
@@ -148,23 +151,4 @@ export const FrameContainer = styled.div<{ url: string }>`
     width: 70%;
     height: 80%;
   }
-`;
-
-export const Bottom = styled.div`
-  width: 100%;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  algin-items: center;
-  bottom: 4%;
-  @media (max-width: 768px) {
-    bottom: 0;
-  }
-`;
-
-export const BottomText = styled.span`
-  color: rgb(255, 252, 225);
-  font-family: Lemon;
-  font-size: 30px;
-  font-weight: 800;
 `;
