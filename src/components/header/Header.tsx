@@ -2,7 +2,7 @@ import { useLocation } from "react-router-dom";
 import * as S from "./styled";
 export default function Header() {
   const location = useLocation();
-  console.log("location", location);
+
   const { pathname } = location;
   return (
     <S.Header>
@@ -33,8 +33,8 @@ export default function Header() {
           </S.MenuLink>
         </S.MenuLinkWrapper>
         <S.MenuLinkWrapper>
-          <S.MenuLink to="/resume" clicked={pathname === "/resume"}>
-            Resume
+          <S.MenuLink to="/career" clicked={pathname === "/career"}>
+            Career
           </S.MenuLink>
         </S.MenuLinkWrapper>
         <S.MenuLinkWrapper>

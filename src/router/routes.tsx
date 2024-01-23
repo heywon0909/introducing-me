@@ -1,10 +1,10 @@
 import { RouteObject } from "react-router-dom";
 import Root from "../pages/root/Root";
 import Home from "../pages/main/Home";
-import Info from '../pages/info/Info';
-import Skills from 'pages/skills/Skills';
-import Resume from 'pages/resume/Resume';
-import Project from 'pages/project/Project';
+import Info from "../pages/info/Info";
+import Skills from "pages/skills/Skills";
+import Career from "pages/career/Career";
+import Project from "pages/project/Project";
 
 // import Insert from 'pages/insert/Insert';
 
@@ -22,18 +22,17 @@ const paths: RouteObject[] = [
         element: <Info />,
       },
       {
-        path: '/skills',
-        element:<Skills/>
+        path: "/skills",
+        element: <Skills />,
       },
       {
-        path: '/resume',
-        element:<Resume/>
+        path: "/career",
+        element: <Career />,
       },
       {
-        path: '/project',
-        element:<Project/>
-      }
-    
+        path: "/project",
+        element: <Project />,
+      },
     ],
   },
 ];

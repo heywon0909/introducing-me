@@ -80,6 +80,7 @@ export const LogoWrapper = styled(Link)`
   width: auto;
   display: flex;
   align-items: center;
+  text-decoration-line: none;
 `;
 
 export const Frame = styled.div<{ left?: number; right?: number }>`
