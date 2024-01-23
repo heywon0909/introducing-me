@@ -38,7 +38,7 @@ export const MenuLinkWrapper = styled.div`
   display: flex;
 `;
 
-export const MenuLink = styled(Link)`
+export const MenuLink = styled(Link)<{ clicked: boolean }>`
   width: 100%;
   color: rgb(123 123 123);
   font-family: NotoSansKR-Medium;
@@ -48,6 +48,14 @@ export const MenuLink = styled(Link)`
   &:hover {
     color: #fff;
   }
+  &:active {
+    color: #fff;
+  }
+  ${(props) =>
+    props.clicked &&
+    `
+    color:#fff;
+  `};
 `;
 
 export const LogoImg = styled.img`
@@ -68,7 +76,7 @@ export const Logo = styled.span`
   font-size: 16px;
 `;
 
-export const LogoWrapper = styled.div`
+export const LogoWrapper = styled(Link)`
   width: auto;
   display: flex;
   align-items: center;
