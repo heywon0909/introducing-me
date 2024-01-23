@@ -14,16 +14,8 @@ export default function Root() {
       <Header/>
       <S.ContainerWrapper>
         <Nav hover={hover} handleHover={handleHover} />
-        <Outlet/>
+        <Outlet />
       </S.ContainerWrapper>
-      <S.Bottom>
-        <S.BottomText>h</S.BottomText>
-        <S.BottomText>e</S.BottomText>
-        <S.BottomText>y</S.BottomText>
-        <S.BottomText>w</S.BottomText>
-        <S.BottomText>o</S.BottomText>
-        <S.BottomText>n</S.BottomText>
-      </S.Bottom>
     </S.Container>
   );
 }

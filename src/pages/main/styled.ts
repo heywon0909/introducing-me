@@ -149,3 +149,22 @@ export const FrameContainer = styled.div<{ url: string }>`
     height: 80%;
   }
 `;
+
+export const Bottom = styled.div`
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  algin-items: center;
+  bottom: 4%;
+  @media (max-width: 768px) {
+    bottom: 0;
+  }
+`;
+
+export const BottomText = styled.span`
+  color: rgb(255, 252, 225);
+  font-family: Lemon;
+  font-size: 30px;
+  font-weight: 800;
+`;

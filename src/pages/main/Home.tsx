@@ -92,6 +92,15 @@ export default function Home() {
             <S.ProfileImg src={process.env.PUBLIC_URL + '/assets/image/heyIcon.png'} />
           </S.Img>
         </S.Container>
-      </S.FrameContainer></>
+      </S.FrameContainer>
+      <S.Bottom>
+        <S.BottomText>h</S.BottomText>
+        <S.BottomText>e</S.BottomText>
+        <S.BottomText>y</S.BottomText>
+        <S.BottomText>w</S.BottomText>
+        <S.BottomText>o</S.BottomText>
+        <S.BottomText>n</S.BottomText>
+      </S.Bottom>
+    </>
     );
 }
