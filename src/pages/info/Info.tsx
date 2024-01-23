@@ -6,10 +6,10 @@ export default function Info() {
             <S.Mybanner>
                 <S.Title>ABOUT</S.Title>
             </S.Mybanner>
+             <S.TitleText>꾸준히 LEVELUP 하는 프론트엔드 박혜원입니다 🌳</S.TitleText>
             <S.Userbanner>
-                <S.TitleText>꾸준히 LEVELUP 하는 프론트엔드 박혜원입니다 🌳</S.TitleText>
                 <S.UserWrapper>
-                    <S.UserImg>SDF</S.UserImg>
+                    <S.UserImg></S.UserImg>
                     <S.UserInfoWrapper>
                         <S.UserInfo>
                             <S.UserText>NAME</S.UserText>

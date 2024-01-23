@@ -20,7 +20,7 @@ export const InfoWrapper = styled.div`
   width: 70%;
   height: 100%;
   display: flex;
-  gap: 10px;
+  gap: 3%;
   flex-direction: column;
 `;
 
@@ -58,7 +58,7 @@ export const UserInfo = styled.div`
 `;
 
 export const UserWrapper = styled.div<{ url?: string }>`
-  width: 100%;
+  width: 70%;
   background-color: #000;
   display: flex;
   padding: 2px 2px;
@@ -67,7 +67,7 @@ export const UserWrapper = styled.div<{ url?: string }>`
 `;
 
 export const UserText = styled.span`
-  font-size: 1.6vw;
+  font-size: 1.6rem;
   letter-spacing: -0.01em;
   line-height: 100%;
   margin: 0;
@@ -82,7 +82,7 @@ export const UserText = styled.span`
 `;
 
 export const Text = styled.span`
-  font-size: 1vw;
+  font-size: 1rem;
   letter-spacing: -0.01em;
   line-height: 100%;
   margin: 0;
@@ -134,7 +134,7 @@ export const Skills = styled.div`
 `;
 
 export const TitleText = styled.span`
-  font-size: 1.4vw;
+  font-size: 1rem;
   letter-spacing: -0.01em;
   line-height: 100%;
   margin: 0;
@@ -147,7 +147,7 @@ export const TitleText = styled.span`
   justify-content: center;
   position: relative;
   @media (max-width: 600px) {
-    font-size: 10vw;
+    font-size: 1.5rem;
   }
   margin-bottom: 10px;
 `;
